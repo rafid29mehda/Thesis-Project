@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from lightgbm import LGBMClassifier  # Replaced RandomForestClassifier with LightGBM
+from sklearn.preprocessing import MinMaxScaler
+from lightgbm import LGBMClassifier  
 from sklearn.metrics import classification_report, confusion_matrix
 from imblearn.over_sampling import SMOTE
 import shap
