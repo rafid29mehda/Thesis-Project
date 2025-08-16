@@ -115,16 +115,7 @@ def objective(trial: Trial):
 study = optuna.create_study(direction='maximize')
 study.optimize(objective, n_trials=50)
 
-import numpy as np
-import torch
-import torch.nn as nn
-from pytorch_tabnet.tab_model import TabNetClassifier
-from sklearn.metrics import classification_report, confusion_matrix
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-# Assuming device, study.best_params, X_train_flat, y_train_final, X_valid_flat, y_valid, X_test_flat, y_test are defined earlier
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Define the augment_data function
 def augment_data(X, y, permutation_prob=0.1):
