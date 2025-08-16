@@ -131,16 +131,6 @@ plt.xlabel('Predicted Label')
 plt.ylabel('True Label')
 plt.show()
 
-# Initialize the SHAP TreeExplainer
-explainer = shap.TreeExplainer(lgbm_classifier)
-
-# Calculate SHAP values for the test set
-shap_values = explainer.shap_values(X_test_scaled)
-
-# SHAP Summary Plot with Correct Indexing
-
-import shap
-import matplotlib.pyplot as plt
 
 # Initialize the SHAP TreeExplainer
 explainer = shap.TreeExplainer(lgbm_classifier)
