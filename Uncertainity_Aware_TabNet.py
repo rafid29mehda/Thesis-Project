@@ -1,5 +1,5 @@
 # Install libraries
-!pip install pytorch-tabnet ctgan optuna imbalanced-learn torch pandas numpy scikit-learn matplotlib seaborn
+!pip install pytorch-tabnet ctgan optuna imbalanced-learn torch 
 
 # Imports
 import pandas as pd
